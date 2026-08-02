@@ -41,7 +41,7 @@ Before running this application, install:
 
 # Clone Git Repository
 
-Clone the repository:
+Clone the repository: https://github.com/vicksidhu/Note-Taking-Application
 
 Navigate into the server folder:
 - cd note-taking-app/server
@@ -248,6 +248,8 @@ I spent time testing API requests using the Thunder Client extension to troubles
 I learned the importance of organizing backend code using models, controllers, routes, and middleware. Building the backend first and creating each operation step by step helped me understand how each part of the application worked and made debugging easier.
 
 Implementing note editing was another challenge because it required connecting the frontend interface with the backend update route. Troubleshooting this process improved my understanding of how frontend components communicate with RESTful APIs.
+
+I also faced some challenges with GitHub as I started doing commits locally without adding a gitignore initially so had to go back and remove some files them from git tracking without actually deleting them locally.
 
 This project improved my confidence working with Node.js, Express.js, MongoDB, JWT authentication, and RESTful API development.
 
