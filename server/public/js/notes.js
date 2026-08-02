@@ -130,3 +130,14 @@ async function saveEdit(id) {
         document.getElementById("message").textContent = updatedNote.message || "An error occurred. Please try again.";
     }
 }
+
+// Handle logout
+const logoutButton = document.getElementById("logoutButton");
+if (logoutButton) {
+    logoutButton.addEventListener("click", () => {
+        // Clear the token from local storage
+        localStorage.removeItem("token");
+        // Redirect to the login page
+        window.location.href = "index.html";
+    });
+}

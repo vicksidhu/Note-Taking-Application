@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Notes</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            NoteApp
+        </div>
+        <div class="nav-links">
+            <button id="logoutButton">Logout</button>
+        </div>
+    </nav>
     <div class="container">
-        <h1>My Notes</h1>
-
-        <button id="logoutButton">Logout</button>
-
+        <header class="page-header">
+            <h1>My Notes</h1>
+            <p>Manage your personal notes here!</p>
+        </header>
+<h2 class="section-title">Create Note</h2>
         <form id="noteForm">
             <input type="text" id="title" placeholder="Note Title" required>
             <textarea id="content" placeholder="Note Content" required></textarea>
             <button type="submit">Add Note</button>
         </form>
 
-        <h2>Your Notes</h2>
+        <h2 class="section-title">Your Notes</h2>
         <div id="notesContainer"></div>
     </div>
 
     <script src="js/notes.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,217 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    background: slategray;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.navbar button {
+    background: whitesmoke;
+    color: slategray;
+    margin: 0;
+}
+
+
+.navbar button:hover {
+    background: slateblue;
+}
+
+/* Header */
+.page-header {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid slateblue;
+}
+
+.page-header p {
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Section Titles */
+.section-title {
+    margin-top: 35px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid slateblue;
+    color: #333;
+}
+/* Main Styling */
+body {
+    background-color: whitesmoke;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #555;
+    margin-top: 30px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    background: slateblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px 3px;
+    font-size: 14px;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#message {
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+}
+
+/* Notes */
+.note-card {
+    background: whitesmoke;
+    padding: 20px;
+    margin: 15px 0;
+    border: 5px solid slategray;
+    border-radius: 10px;
+}
+
+.note-card h3 {
+    margin: 0;
+    color: #333;
+}
+
+.note-card p {
+    color: #555;
+    white-space: pre-wrap;
+    /* Preserve line breaks */
+}
+
+.note-card input,
+.note-card textarea {
+    background: white;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px;
+    }
+
+
+    .nav-brand {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+
+    h1 {
+        font-size: 24px;
+    }
+
+
+    h2 {
+        font-size: 20px;
+    }
+
+
+    input,
+    textarea {
+        font-size: 16px;
+    }
+
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+
+    .note-card {
+        padding: 15px;
+    }
+
+
+    .note-card button {
+        width: 100%;
+    }
+}
